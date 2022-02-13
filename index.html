@@ -25,12 +25,22 @@
 
 <div class="passbox">  
   <div onclick="gate();">
-    <h2 id="pw" style="text-align:center">パスワードを入力</h2>
+    <h2 id="target" style="text-align:center">パスワードを入力</h2>
    </div>
 </div>
 
   
 	
 
+<script>
+function changeDisplay(){
+  var str = document.getElementById("target");
+  if(str.style.display == "none"){
+    str.style.display = "block";
+  }else{
+    str.style.display = "none";
+  }
+}
+</script>
 	
-	<div class="g-recaptcha" data-callback="clickBtn2()" data-sitekey="6LeY9PsUAAAAAGpHXGEYqULXfXOKqpyyCw9mUub5"></div>
+	<div class="g-recaptcha" data-callback="changeDisplay" data-sitekey="6LeY9PsUAAAAAGpHXGEYqULXfXOKqpyyCw9mUub5"></div>
