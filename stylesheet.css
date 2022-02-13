@@ -32,7 +32,6 @@ body {
 }
 
 .loader-1 {
-    transform: scale(2, 2);
   width: 70px;
   height: 70px;
   border-radius: 50%;
