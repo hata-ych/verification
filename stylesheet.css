@@ -44,3 +44,45 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-5 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 4px;
+  border-color: #000000 #00000010 #00000010 #00000010;
+  position: relative;
+  animation-name: stagger;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-i-out;
+}
+
+.loader-6 {
+  width: 40px;
+  height: 40px;
+  border: solid 4px;
+  border-color: #000000 #00000010 #00000010 #00000010;
+  position: relative;
+  animation-name: stagger;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes stagger {
+  25% {
+    border-color: #00000010 #000000 #00000010 #00000010;
+  }
+  50% {
+    border-color: #00000010 #00000010 #000000 #00000010;
+  }
+  75% {
+    border-color: #00000010 #00000010 #00000010 #000000;
+  }
+}
