@@ -25,14 +25,28 @@
 
 <div class="passbox">  
   <div onclick="gate();">
-    <h2 style="text-align:center">パスワードを入力</h2>
+    <h2 id="pw" style="text-align:center">パスワードを入力</h2>
    </div>
 </div>
 
   
-  <form method="GET">
-	<div class="g-recaptcha" data-sitekey="6LeY9PsUAAAAAGpHXGEYqULXfXOKqpyyCw9mUub5"></div>
-	<p><label>名前</label></p>
-	<p><input type="text" name="text-01"></p>
-	<p><input type="submit" value="送信"></p>
-</form>
+	
+<script>
+//初期表示は非表示
+document.getElementById("pw").style.display ="none";
+
+function clickBtn1(){
+	const p1 = document.getElementById("pw");
+
+	if(p1.style.display=="block"){
+		// noneで非表示
+		p1.style.display ="none";
+	}else{
+		// blockで表示
+		p1.style.display ="block";
+	}
+}
+</script>
+	
+	
+	<div class="g-recaptcha" data-callback="clickBtn1()" data-sitekey="6LeY9PsUAAAAAGpHXGEYqULXfXOKqpyyCw9mUub5"></div>
