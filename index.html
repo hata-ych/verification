@@ -25,7 +25,7 @@
 
 <div class="passbox">  
   <div onclick="gate();">
-    <h2 id="pw" style="text-align:center">パスワードを入力</h2>
+    <h2 id="p1" style="text-align:center">パスワードを入力</h2>
    </div>
 </div>
 
@@ -33,17 +33,17 @@
 	
 <script>
 //初期表示は非表示
-document.getElementById("pw").style.display ="none";
+document.getElementById("p1").style.display ="none";
 
 function clickBtn1(){
-	const pw = document.getElementById("pw");
+	const p1 = document.getElementById("p1");
 
-	if(pw.style.display=="block"){
+	if(p1.style.display=="block"){
 		// noneで非表示
-		pw.style.display ="none";
+		p1.style.display ="none";
 	}else{
 		// blockで表示
-		pw.style.display ="block";
+		p1.style.display ="block";
 	}
 }
 </script>
