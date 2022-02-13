@@ -6,6 +6,10 @@
 }
 
 
+.captchabox{
+    display: flex;
+}
+
 
 
 body {
