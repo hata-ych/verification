@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+  transform: scale(2, 2);
   margin: 2%;
   display: inline-flex;
   justify-content: center;
