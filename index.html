@@ -33,7 +33,9 @@
 	
 
 <script>
-document.getElementById("target").style.visibility ="hidden";
+var strb = document.getElementById("target")
+  if(strb.style.display == "block"){
+	  strb.style.display = "none";}
 
 function changeDisplay(){
   var str = document.getElementById("target");
