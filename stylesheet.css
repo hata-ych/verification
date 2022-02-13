@@ -7,7 +7,7 @@
 
 
 .captchabox, .g-recaptcha{
-  width:50px;
+  margin:30px;
     text-align: center;
      justify-content: center;
 }
