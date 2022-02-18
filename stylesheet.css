@@ -1,13 +1,13 @@
 .titlebox{
   margin:50px;
-  background-color: #ffff;
-  border-radius:20px;
-  box-shadow:0 0 10px #86868626;
+  background: #E3E6EC;
+  box-shadow: 18px 18px 20px #D1D9E6, -18px -18px 20px #FFFFFF;
+  border-radius: 30px;
 }
 
 
 .passbox{
-  background-color:#FFE8FF;
+  background-color:transparent;
   border-radius:50px;
   margin:20px;
   padding:20px;
@@ -24,7 +24,7 @@
 
 body {
   margin: 0;
-  background-color: #F8F8F8;
+  background-color: #E3E6EC;
 }
 
 .wrapper {
